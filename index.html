@@ -18,7 +18,7 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             color: white;
             text-align: center;
-            padding-bottom: 60vh; /* Збільшено відступ від низу екрану */
+            padding-bottom: 20vh; /* Відступ для мобільних пристроїв */
         }
         h1 {
             font-size: 4rem;
@@ -38,6 +38,11 @@
             }
             60% {
                 transform: scale(1.1);
+            }
+        }
+        @media (min-width: 768px) {
+            body {
+                padding-bottom: 60vh; /* Збільшений відступ для комп'ютерів */
             }
         }
     </style>
